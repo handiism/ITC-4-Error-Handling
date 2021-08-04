@@ -1,0 +1,12 @@
+id/handiism/genshin/BuildConfig.java
+ id.handiism.genshin.BuildConfig
+id/handiism/genshin/vision/Anemo.java
+ id.handiism.genshin.vision.Anemo
+id/handiism/genshin/vision/Hydro.java
+ id.handiism.genshin.vision.Hydro
+id/handiism/genshin/vision/Pyro.java
+ id.handiism.genshin.vision.Pyro
+id/handiism/genshin/MainActivity.java
+ id.handiism.genshin.MainActivity
+ id.handiism.genshin.MainActivity$1
+ id.handiism.genshin.MainActivity$1$1

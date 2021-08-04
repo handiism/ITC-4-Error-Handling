@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/scrollable"
+        app:layout_constraintLeft_toLeftOf="@id/scrollable"
+        app:layout_constraintRight_toRightOf="@id/scrollable"
+        app:layout_constraintTop_toTopOf="@id/scrollable">
+        <TextView
+            android:id="@+id/tv_characters"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Masukkan Karaktermu"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintRight_toRightOf="@+id/constraint"
+            app:layout_constraintTop_toTopOf="@+id/constraint"
+            app:layout_constraintLeft_toLeftOf="@id/constraint"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Masukkan Nama"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@id/constraint"
+            app:layout_constraintRight_toRightOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@+id/tv_characters"/>
+
+        <EditText
+            android:id="@+id/et_vision"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Masukkan Vision"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintLeft_toLeftOf="@id/constraint"
+            app:layout_constraintRight_toRightOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+        <EditText
+            android:id="@+id/et_hp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Masukkan Health Point"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_vision" />
+
+        <EditText
+            android:id="@+id/et_attack"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Masukkan Attack Point"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_hp" />
+
+        <EditText
+            android:id="@+id/et_elemental"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Masukkan Elemental Point"
+            android:minHeight="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_attack" />
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan"
+            android:textColorHint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/et_elemental"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Karakter"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btn_input"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- - -"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_list"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/tv_enemy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- - -"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_mine"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_reaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_enemy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- - -"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_reaction"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
